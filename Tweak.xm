@@ -1,12 +1,14 @@
-@interface NCNotificationListCell
--(void)cellViewButtonPressed:(id)arg1;
-@end
+//Originally created by mmshivesh: https://github.com/mmshivesh/TapToViewNotifications
 
-// %hook NCNotificationGroupList
-// - (BOOL)notificationViewControllerShouldAllowLongPressGesture:(id)arg1{
-//     return YES;
-// }
-// %end
+//@interface NCNotificationListCell
+//-(void)cellViewButtonPressed:(id)arg1;
+//@end
+
+%hook NCNotificationGroupList
+- (BOOL)notificationViewControllerShouldAllowLongPressGesture:(id)arg1{
+    return YES;
+}
+%end
 
 // %hook PLClickPresentationInteractionManager
 // -(BOOL)_delegateShouldAllowLongPressGesture {
@@ -35,14 +37,14 @@
 // }
 // %end
 
-// %hook PLClickPresentationInteractionManagerDelegate 
+// %hook PLClickPresentationInteractionManagerDelegate
 // -(BOOL)clickPresentationInteractionManagerShouldAllowLongPressGesture:(id)arg1 {
 //     return YES;
 // }
-// %end 
+// %end
 
-%hook NCNotificationListCell
--(void)hintSideSwipeForDefaultAction {
-    [self cellViewButtonPressed: self];
-}
-%end
+//%hook NCNotificationListCell
+//-(void)hintSideSwipeForDefaultAction {
+//    [self cellViewButtonPressed: self];
+//}
+//%end

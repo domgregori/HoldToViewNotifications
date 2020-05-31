@@ -5,7 +5,7 @@ SDKVERSION = 10.1
 TapToViewNotifications_FILES = Tweak.xm
 TapToViewNotifications_FRAMWORKS = UIKit
 DEBUG=0
-PACKAGE_VERSION=1.0.0
+PACKAGE_VERSION=1.0.1
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 internal-stage::
