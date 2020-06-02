@@ -1,7 +1,7 @@
-Package: com.domg.taptoviewnotification
-Name: TapToViewNotification
-Description: A tweak that fixes haptic feedback on notifications for iPhone 8. Original creator: mmshivesh
-Version: 1.0.1
+Package: com.domg.holdtoviewnotification
+Name: HoldToViewNotification
+Description: A tweak that fixes haptic feedback on notifications for iPhone 8.
+Version: 1.0.2
 Priority: optional
 Section: Tweaks
 Architecture: iphoneos-arm
